@@ -1,0 +1,321 @@
+/*
+ * Globals
+*/
+
+h1 {
+    font-size: 16px;
+    font-family: 'Coustard', serif;
+}
+
+.lead {
+    font-size:14px;
+}
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/*
+ * Base structure
+*/
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    font-family: 'Lato', sans-serif;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.fullscreen-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+.fullscreen-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+.cover-inner {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* gallery */
+.gallery {
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    position: relative;
+}
+
+.gallery + div {
+    position: relative;
+    top: -100%;
+}
+
+.gallery .item span {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .item:first-of-type {
+    position: absolute;
+}
+
+.gallery .item .img-1 {
+    background-image: url('img/001.jpg');
+}
+
+.gallery .item .img-2 {
+    background-image: url('img/002.jpg');
+}
+
+.gallery .item .img-3 {
+    background-image: url('img/003.jpg');
+}
+
+.gallery .item .img-4 {
+    background-image: url('img/004.jpg');
+}
+
+.gallery .item .img-5 {
+    background-image: url('img/005.jpg');
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+
+/*
+ * Header
+*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fcc34c;
+    outline: 0;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    color: #f35958;
+    background-color: transparent;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #f35958;
+}
+
+.masthead-nav .tooltip {
+    left: -32px;
+    top: 50px;
+    width: 80px;
+    opacity: 0;
+}
+
+.masthead-nav > li > a:hover + div {
+    opacity: 1;
+}
+
+.masthead-nav .tooltip-inner {
+    background-color: #7bc156;
+}
+.masthead-nav .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #7bc156;
+}
+
+/*
+ * Cover
+*/
+
+
+.action-button {
+    clear: both;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #1a6a80;
+}
+
+.action-button a{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.action-button a:hover,
+.action-button a:focus{
+    background-color: #f35958;
+}
+
+.more {
+    background: none repeat scroll 0 0 #fcc34c;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: normal;
+    height: 53px;
+    left: 50%;
+    line-height: 53px;
+    margin: 0 0 0 -26.5px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 53px;
+}
+
+.more:hover,
+.more:focus {
+    background: none repeat scroll 0 0 #f35958;
+}
+
+.more span {
+    position: relative;
+    top: 4px;
+    left: -1px;
+}
+
+.logo-band {
+    background-color: #228ba9;
+}
+
+.logo-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-inner {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.logo {
+    text-align: left;
+    padding-top: 10px;
+    max-width: 160px;
+}
+
+.img-logo {
+    width: 120px;
+    padding: 10px;
+    padding-top:30px;
+}
+
+.logo-color-red {
+    color: #f35958;
+}
+.logo-color-yellow {
+    color: #fcc34c;
+}
+.logo-color-green {
+    color: #1abc9c;
+}
+
+.modal-dialog{
+    margin: 20% auto;
+}
+
+.modal-content{
+    background-color: #5bc0de;
+}
+
+.modal-content .btn {
+    background-color: #228ba9;
+    margin-top: 20px;
+}
+
+.modal-header {
+    border:none;
+}
+
+
+/*
+ * Affix and center
+*/
+
+@media (min-width: 768px) {
+
+    /* Start the vertical centering */
+    .fullscreen-wrapper-inner {
+        vertical-align: middle;
+    }
+
+    .logo-container {
+        width: 700px;
+    }
+
+    .more {
+        bottom: 70px;
+    }
+
+    .img-logo {
+        width: 180px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .logo {
+        padding-top: 10px;
+        max-width: none;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .img-logo {
+        width: 270px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .logo {
+        padding-top: 25px;
+    }
+
+    .lead {
+        font-size: 20px;
+    }
+}
