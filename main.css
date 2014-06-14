@@ -46,10 +46,6 @@ body {
     height: 100%; /* For at least Firefox */
     min-height: 100%;
 }
-.cover-inner {
-    margin-right: auto;
-    margin-left: auto;
-}
 
 
 /* gallery */
@@ -115,6 +111,15 @@ body {
     margin-bottom: 10px;
 }
 
+.masthead-nav {
+    background-color: #70708f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:250px;
+}
+
 .masthead-nav > li {
     display: inline-block;
 }
@@ -128,6 +133,7 @@ body {
     font-weight: bold;
     color: #fcc34c;
     outline: 0;
+    line-height: 12px;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
@@ -158,21 +164,27 @@ body {
     border-bottom-color: #7bc156;
 }
 
-/*
- * Cover
-*/
+
 
 
 .action-button {
     clear: both;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+#top .action-button {
     border-top: 1px solid #1a6a80;
+}
+
+#whatsitlike .action-button {
+    border-top: 1px solid #fff;
 }
 
 .action-button a{
     padding: 10px 20px;
     font-weight: bold;
+    font-size: 12px;
 }
 
 .action-button a:hover,
@@ -185,14 +197,14 @@ body {
     border-radius: 50%;
     font-size: 18px;
     font-weight: normal;
-    height: 53px;
+    height: 34px;
     left: 50%;
-    line-height: 53px;
-    margin: 0 0 0 -26.5px;
+    line-height: 34px;
+    margin: 0 0 0 -17px;
     padding: 0;
     position: absolute;
     text-align: center;
-    width: 53px;
+    width: 34px;
 }
 
 .more:hover,
@@ -206,42 +218,41 @@ body {
     left: -1px;
 }
 
-.logo-band {
+.band.logo {
     background-color: #228ba9;
 }
 
-.logo-container {
+.fullscreen-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.logo-inner {
+.fullscreen-inner {
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
 }
 
-.logo {
+h1.logo,
+p.logo {
     text-align: left;
     padding-top: 10px;
     max-width: 160px;
 }
 
-.img-logo {
+img.logo {
     width: 120px;
     padding: 10px;
     padding-top:30px;
 }
 
-.logo-color-red {
-    color: #f35958;
+#whatsitlike .fullscreen-wrapper-inner {
+    background-color: #333341;
 }
-.logo-color-yellow {
-    color: #fcc34c;
-}
-.logo-color-green {
-    color: #1abc9c;
+
+#whatsitlike img {
+    width: 40px;
 }
 
 .modal-dialog{
@@ -273,15 +284,11 @@ body {
         vertical-align: middle;
     }
 
-    .logo-container {
-        width: 700px;
+    .fullscreen-container {
+        width: 800px;
     }
 
-    .more {
-        bottom: 70px;
-    }
-
-    .img-logo {
+    img.logo {
         width: 180px;
         padding: 25px;
     }
@@ -290,7 +297,8 @@ body {
         font-size: 25px;
     }
 
-    .logo {
+    h1.logo,
+    p.logo {
         padding-top: 10px;
         max-width: none;
     }
@@ -298,11 +306,26 @@ body {
     .lead {
         font-size: 14px;
     }
+
+.action-button {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.action-button a {
+    font-size: 16px;
+}
+    .more {
+        height: 53px;
+        line-height: 53px;
+        margin: 0 0 0 -26.5px;
+        width: 53px;
+    }
 }
 
 @media (min-width: 992px) {
 
-    .img-logo {
+    img.logo {
         width: 270px;
     }
 
@@ -310,8 +333,13 @@ body {
         font-size: 40px;
     }
 
-    .logo {
+    h1.logo,
+    p.logo {
         padding-top: 25px;
+    }
+
+    #whatsitlike img {
+        width: 140px;
     }
 
     .lead {
