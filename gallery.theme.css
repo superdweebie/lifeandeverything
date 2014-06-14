@@ -11,9 +11,7 @@
 /*
 	Theme controls how everything looks in Gallery CSS.
 */
-.gallery {
-  position: relative;
-}
+
 .gallery .item {
   height: 400px;
   overflow: hidden;

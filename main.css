@@ -57,12 +57,11 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    position: relative;
 }
 
 .gallery + div {
-    position: relative;
-    top: -100%;
+    position: absolute;
+    top: 0px;
 }
 
 .gallery .item span {
