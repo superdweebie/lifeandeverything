@@ -57,7 +57,16 @@ body {
 
 .gallery + div {
     position: absolute;
-    top: 0px;
+    top: 0%;
+}
+
+#why .gallery .item {
+    top: 200%;
+}
+
+#why .gallery + div {
+    position: absolute;
+    top: 200%;
 }
 
 .gallery .item span {
@@ -90,6 +99,26 @@ body {
 
 .gallery .item .img-5 {
     background-image: url('img/005.jpg');
+}
+
+.gallery .item .img-6 {
+    background-image: url('img/006.jpg');
+}
+
+.gallery .item .img-7 {
+    background-image: url('img/007.jpg');
+}
+
+.gallery .item .img-8 {
+    background-image: url('img/008.jpg');
+}
+
+.gallery .item .img-9 {
+    background-image: url('img/009.jpg');
+}
+
+.gallery .item .img-10 {
+    background-image: url('img/010.jpg');
 }
 
 /* Padding for spacing */
@@ -153,7 +182,7 @@ body {
     opacity: 0;
 }
 
-.masthead-nav > li > a:hover + div {
+.masthead-nav > li > a:hover + .tooltip {
     opacity: 1;
 }
 
@@ -164,8 +193,9 @@ body {
     border-bottom-color: #7bc156;
 }
 
-
-
+#why a:hover + .tooltip {
+    opacity: 1;
+}
 
 .action-button {
     clear: both;
@@ -179,6 +209,10 @@ body {
 
 #whatsitlike .action-button {
     border-top: 1px solid #fff;
+}
+
+#why .action-button {
+    border-top: 1px solid #64eacf;
 }
 
 .action-button a{
@@ -207,9 +241,14 @@ body {
     width: 34px;
 }
 
+#whatsitlike .more {
+    background-color: #70708f;
+}
+
 .more:hover,
-.more:focus {
-    background: none repeat scroll 0 0 #f35958;
+.more:focus,
+#whatsitlike .more:hover{
+    background-color: #f35958;
 }
 
 .more span {
@@ -220,6 +259,10 @@ body {
 
 .band.logo {
     background-color: #228ba9;
+}
+
+#why .band {
+    background-color: #1abc9c;
 }
 
 .fullscreen-container {
