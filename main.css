@@ -362,6 +362,39 @@ img.big-icon {
  * Affix and center
 */
 
+.social {
+    display: inline-block;
+    margin: 0.5em;
+    overflow: hidden;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    height: 62px;
+    width: 62px;
+}
+
+.icon-tumblr {
+    background: url("sprit.png") no-repeat scroll -619px -219px rgba(0, 0, 0, 0);
+}
+
+.icon-twitter {
+    background: url("sprit.png") no-repeat scroll -219px -19px rgba(0, 0, 0, 0);
+}
+
+.icon-facebook {
+    background: url("sprit.png") no-repeat scroll -119px -19px rgba(0, 0, 0, 0);
+}
+
+.icon-rss {
+    background: url("sprit.png") no-repeat scroll -19px -19px rgba(0, 0, 0, 0);
+}
+
+.icon-mail {
+    background: url("sprit.png") no-repeat scroll -22px -313px rgba(0, 0, 0, 0);
+}
+
 @media (min-width: 768px) {
 
     /* Start the vertical centering */
