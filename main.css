@@ -358,6 +358,31 @@ img.big-icon {
 #howtoplay .extra{
     display:none;
 }
+
+#becomepartoftheproject {
+    background-color: #ffc500;
+}
+
+.last-action-button .btn {
+    background-color: #f35958;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.last-action-button {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffeba7;
+}
+
+img.small-icon {
+    width: 40px;
+}
+
+.media-break {
+    display: none;
+}
+
 /*
  * Affix and center
 */
@@ -371,28 +396,34 @@ img.big-icon {
 
 .icon {
     display: inline-block;
-    height: 62px;
-    width: 62px;
+    height: 32px;
+    width: 32px;
 }
 
 .icon-tumblr {
-    background: url("sprit.png") no-repeat scroll -619px -219px rgba(0, 0, 0, 0);
+    background: url("sprit.png") no-repeat scroll -309px -109px rgba(0, 0, 0, 0);
+    background-size: 400px;
+
 }
 
 .icon-twitter {
-    background: url("sprit.png") no-repeat scroll -219px -19px rgba(0, 0, 0, 0);
+    background: url("sprit.png") no-repeat scroll -109px -9px rgba(0, 0, 0, 0);
+    background-size: 400px;
 }
 
 .icon-facebook {
-    background: url("sprit.png") no-repeat scroll -119px -19px rgba(0, 0, 0, 0);
+    background: url("sprit.png") no-repeat scroll -59px -9px rgba(0, 0, 0, 0);
+    background-size: 400px;
 }
 
 .icon-rss {
-    background: url("sprit.png") no-repeat scroll -19px -19px rgba(0, 0, 0, 0);
+    background: url("sprit.png") no-repeat scroll -9px -9px rgba(0, 0, 0, 0);
+    background-size: 400px;
 }
 
 .icon-mail {
-    background: url("sprit.png") no-repeat scroll -22px -313px rgba(0, 0, 0, 0);
+    background: url("sprit.png") no-repeat scroll -11px -156px rgba(0, 0, 0, 0);
+    background-size: 400px;
 }
 
 @media (min-width: 768px) {
@@ -447,6 +478,23 @@ img.big-icon {
 #howtoplay .big-icon {
     float: none;
 }
+
+.media-break {
+    display:inline;
+}
+
+    img.small-icon {
+        width: 80px;
+    }
+
+.last-action-button .btn {
+    font-size: 30px;
+}
+
+.last-action-button {
+    padding-bottom: 15px;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -478,6 +526,10 @@ img.big-icon {
         font-size: 20px;
     }
 
+    img.small-icon {
+        width: 100px;
+    }
+
 #howtoplay .extra{
     display:inherit;
 }
@@ -485,4 +537,43 @@ img.big-icon {
 p {
     font-size: 12px;
 }
+
+.last-action-button .btn {
+    font-size: 40px;
+}
+
+.last-action-button {
+    padding-bottom: 20px;
+}
+
+.icon {
+    height: 64px;
+    width: 62px;
+}
+
+.icon-tumblr {
+    background: url("sprit.png") no-repeat scroll -619px -219px rgba(0, 0, 0, 0);
+    background-size: 800px;
+}
+
+.icon-twitter {
+    background: url("sprit.png") no-repeat scroll -219px -19px rgba(0, 0, 0, 0);
+    background-size: 800px;
+}
+
+.icon-facebook {
+    background: url("sprit.png") no-repeat scroll -119px -19px rgba(0, 0, 0, 0);
+    background-size: 800px;
+}
+
+.icon-rss {
+    background: url("sprit.png") no-repeat scroll -19px -19px rgba(0, 0, 0, 0);
+    background-size: 800px;
+}
+
+.icon-mail {
+    background: url("sprit.png") no-repeat scroll -22px -313px rgba(0, 0, 0, 0);
+    background-size: 800px;
+}
+
 }
