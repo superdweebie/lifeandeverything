@@ -1,0 +1,16 @@
+{
+  "name": "lifeandeverything.net",
+  "version": "1.0.0",
+  "description": "website for the Life the Universe and Everything game",
+  "homepage": "http://github.com/superdweebie/lifeandeverything",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/superdweebie/lifeandeverything.git"
+  },
+  "dependencies": {
+    "gulp": "~3.8.5",
+    "gulp-uglify": "~0.3.1",
+    "gulp-concat": "~2.2.0",
+    "gulp-cssmin": "~0.1.6"
+  }
+}
