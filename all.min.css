@@ -9,7 +9,7 @@ h1{font-size:16px;font-family:Coustard,serif}h2{font-size:14px;margin-top:10px;m
 
 @media (min-width: 992px) {
 .icon-blog {
-    background: url("sprit.png") no-repeat scroll -313px -519px rgba(0, 0, 0, 0);
+    background: url("sprit.png") no-repeat scroll -519px -313px rgba(0, 0, 0, 0);
     background-size: 800px;
 }
 }
