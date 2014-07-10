@@ -403,7 +403,6 @@ img.small-icon {
 .icon-blog {
     background: url("sprit.png") no-repeat scroll -259px -156px rgba(0, 0, 0, 0);
     background-size: 400px;
-
 }
 
 .icon-tumblr {
@@ -555,6 +554,11 @@ p {
 .icon {
     height: 64px;
     width: 62px;
+}
+
+.icon-tumblr {
+    background: url("sprit.png") no-repeat scroll -313px -519px rgba(0, 0, 0, 0);
+    background-size: 800px;
 }
 
 .icon-tumblr {
