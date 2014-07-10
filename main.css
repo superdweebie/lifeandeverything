@@ -556,8 +556,8 @@ p {
     width: 62px;
 }
 
-.icon-tumblr {
-    background: url("sprit.png") no-repeat scroll -313px -519px rgba(0, 0, 0, 0);
+.icon-blog {
+    background: url("sprit.png") no-repeat scroll -519px -313px rgba(0, 0, 0, 0);
     background-size: 800px;
 }
 
