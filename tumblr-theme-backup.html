@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/cwragcd/rHRn4wv42/magnific-popup.css" />
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+        
+        
+        <meta name="if: Show Twitter Link" content="1"/>
+        <meta name="if: Show Archive Link" content="1"/>
+        <meta name="text: Header Image URL" content="http://31.media.tumblr.com/d83b99e22981d5e58e2bd74ed2494087/tumblr_n4ef3ynCZP1st5lhmo1_1280.jpg"/>
+        <meta name="color: Background color" content="#f2f2f2"/>
+        <meta name="color: Link Header Color" content="#37BC9B"/>
+        <meta name="color: Link Hover Header Color" content="#48CFAD"/>
+        <meta name="color: Accent Color" content="#4A89DC"/>
+        <meta name="color: Accent Text Color" content="#333"/>
+        <style>
+            
+            
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+  transition:all 0.5s;
+  font-family:Roboto, Arial, Helvetica, sans-serif;
+}
+body {
+  height:100%;
+  width:100%;
+  margin:0px;
+  background-color:{color: Background color};
+  padding-bottom:100px;
+}
+.container {
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
+  position:relative;
+}
+.post {
+  width:100%;
+  background-color:#fff;
+  border:1px solid #e0e0e0;
+  margin-top:20px;
+  border-radius:5px;
+  overflow:hidden;
+  z-index:20;
+  position:relative;
+}
+.post:hover {
+    border-left:1px solid {color: Accent Color};
+}
+.post img {
+    max-width:100%;
+}
+h1, a {
+  color:#333;
+  font-weight:300;
+  text-decoration:none;
+}
+p {
+  color:#808080;
+  font-size:14px;
+  font-weight:300;
+}
+.text {
+  padding:50px 100px;
+}
+.image {
+}
+.image img {
+  width:100%;
+}
+.profile-big {
+  width:300px;
+  position:absolute;
+  left:-320px;
+  background-color:#fff;
+  border:1px solid #e0e0e0;
+  margin-top:20px;
+  border-radius:5px;
+}
+.header {
+  width:100%;
+  height:200px;
+  
+}
+.profile-image {
+  position:absolute;
+  top:150px;
+  left:100px;
+}
+.profile-image img {
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  border:5px solid #fff;
+  display:block;
+}
+
+.profile-big .text {
+  padding:20px;
+  padding-top:50px;
+}
+.profile-big .text h3 {
+  text-align:center;
+  color:#333;
+  font-weight:400;
+}
+.profile-container {
+  position:fixed;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+.profile-small {
+  display:none;
+  background-color:#fff;
+  position:relative;
+}
+.profile-small .text h3 {
+  color:#333;
+  font-weight:400;
+}
+.profile-small .profile-image {
+  top:150px;
+  left:100px;
+}
+.table {
+  display:table;
+  width:100%;
+  text-align:center;
+}
+.row {
+  display:table-row;
+}
+.item {
+  display:table-cell;
+  padding:10px;
+  border-bottom:5px solid #fff;
+  cursor:pointer;
+  position:relative;
+}
+.item:hover {
+    border-bottom:5px solid {color: Accent Color};
+}
+
+.fa {
+  color:{color: Accent Color};
+}
+.item:hover  .comment {
+  display:block;
+}
+.comment {
+  width:100px;
+  height:40px;
+  border-radius:5px;
+  background-color:#ffffff;
+  padding:10px;
+  text-align:center;
+  color:#808080;
+  font-size:14px;
+  position:absolute;
+  bottom:-45px;
+  left:50%;
+  margin-left:-50px;
+  border:1px solid #e0e0e0;
+  display:none;
+  z-index:10;
+}
+.comment:after {
+  content:"";
+	width: 0; 
+	height: 0; 
+  position:absolute;
+  top:-5px;
+  left:50%;
+  margin-left:-5px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #e0e0e0;
+}
+.comment .fa-times {
+  position:absolute;
+  top:3px;
+  right:5px;
+  cursor:pointer;
+}
+ul, li {
+  color:#808080;
+  font-weight:300;
+  font-size:14px;
+}
+p a {
+    text-decoration:underline;
+}
+.social-buttons {
+    display:table;
+}
+.button {
+    display:table-cell;
+    padding:10px;
+    vertical-align:middle;
+}
+.quote {
+    font-family:"Times New Roman";
+}
+.link-name {
+    width:100%;
+    padding:50px;
+    background-color:{color: Link Header Color};
+    color:#fff;
+    font-weight:400;
+    text-align:center;
+}
+.link-name:hover {
+    background-color:{color: Link Hover Header Color};
+    text-decoration:underline;
+}
+.link-name p {
+    color:#fff;
+}
+.large-video {
+    display:block;
+    margin:0 auto;
+    padding-top:50px; 
+    width:500px;
+}
+.medium-video {
+    display:none;
+    margin:0 auto;
+    padding-top:50px; 
+    width:400px;
+}
+.small-video {
+    display:none;
+    margin:0 auto;
+    padding-top:50px; 
+    width:250px;
+}
+.audio-player {
+    display:block;
+    margin:0 auto;
+    padding-top:50px;
+}
+.audio-500 {
+    width:500px;
+    display:block;
+}
+.audio-400 {
+    width:400px;
+    display:none;
+}
+.audio-250 {
+    width:250px;
+    display:none;
+}
+.bold {
+    font-weight:500;
+    font-size:14px;
+}
+.odd {
+    background-color:#f2f2f2;
+    padding:5px;
+}
+.even {
+    background-color:#fff;
+    padding:5px;
+    border-bottom:2px solid #f2f2f2;
+}
+.subtle {
+    font-style:italic;
+    text-decoration: underline; 
+    font-size:12px;
+    float:right;
+}
+blockquote {
+    border-left:3px solid #e0e0e0;
+    width:100%;
+    padding-left:10px;
+    margin:0px;
+}
+.avatar {
+    border-radius:100%;
+    overflow:hidden;
+}
+.reblog {
+    position:relative;
+    top:0px;
+    z-index:-1;
+
+    left:0px;
+    background-color:{color: Accent Color};
+    width:100%;
+    color:#fff;
+    padding-left:10px;
+}
+.reblog .avatar {
+    border:2px solid #fff;
+    margin-top:5px;
+}
+.reblog .social-buttons {
+    height:100%;
+}
+.reblog .social-buttons .row .button p, a {
+    padding:0px;
+    margin:0px;
+    color:#333;
+}
+.reblog-margin {
+    padding-top:0px;
+}
+.reblog .button {
+    padding-left:5px;
+    vertical-align:middle;
+}
+.reblog .row {
+
+}
+.accent {
+    color:#fff;
+    font-size:14px;
+    font-weight:300;
+}
+.accent a {
+    color:#fff;
+    text-decoration:underline;
+}
+.tags {
+    display:block;
+    width:100%;
+    float:left;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    padding:10px;
+}
+.tag {
+    display:block;
+    float:left;
+    font-size:12px;
+    font-weight:300;
+    color:#808080;
+    padding-right:10px;
+}
+.tag a {
+    color:#808080;
+}
+ol.notes {
+                padding: 0px;
+                margin: 25px 0px;
+                list-style-type: none;
+                border-bottom: solid 1px #ccc;
+            }
+
+            ol.notes li.note {
+                border-top: solid 1px #ccc;
+                padding: 10px;
+            }
+
+            ol.notes li.note img.avatar {
+                vertical-align: -4px;
+                margin-right: 10px;
+                width: 16px;
+                height: 16px;
+            }
+
+            ol.notes li.note span.action {
+                font-weight: bold;
+            }
+
+            ol.notes li.note .answer_content {
+                font-weight: normal;
+            }
+
+            ol.notes li.note blockquote {
+                border-color: #eee;
+                padding: 4px 10px;
+                margin: 10px 0px 0px 25px;
+            }
+
+            ol.notes li.note blockquote a {
+                text-decoration: none;
+            }
+@media screen and (max-width:1400px) {
+  .profile-big {
+    display:none;
+  }
+  .profile-small {
+    display:block;
+  }
+  .container {
+    padding:20px;
+    padding-top:0px;
+  }
+}
+@media screen and (max-width:700px) {
+    .text {
+        padding:50px;
+    }
+    .profile-small .profile-image {
+        top:150px;
+        left:50px;
+    }
+    .large-video {
+        display:none;
+    }
+    .medium-video {
+        display:block;
+    }
+    .small-video {
+        display:none;
+    }
+    .audio-500 {
+        display:none;
+    }
+    .audio-400 {
+        display:block;
+    }
+    .audio-250 {
+        display:none;
+    }
+}
+@media screen and (max-width:500px) {
+    .text {
+        padding:20px;
+        padding-top:50px;
+    }
+    .container {
+        padding:10px;
+    }
+    .large-video {
+        display:none;
+    }
+    .medium-video {
+        display:none;
+    }
+    .small-video {
+        display:block;
+    }
+    .audio-500 {
+        display:none;
+    }
+    .audio-400 {
+        display:none;
+    }
+    .audio-250 {
+        display:block;
+    }
+}
+        /* CUSTOM CSS */
+         {CustomCSS}
+        </style>
+    </head>
+    <body>
+
+
+<div class="profile-container">
+  <div class="container">
+    <div class="profile-big">
+      <div class="header" style="background:url({HeaderImage}) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      </div>
+      <div class="profile-image">
+        <a href="{BlogURL}"><img src="{PortraitURL-128}"/></a>
+      </div>
+      <div class="text">
+        <h3>{Title}</h3>
+        {block:Description}
+            <p>{Description}</p>
+        {/block:Description}
+      </div>
+      <div class="table">
+        <div class="row">
+          {block:AskEnabled}
+            <div class="item">
+                <a href="/ask"><i class="fa fa-comment"></i></a>
+                <div class="comment bottom">Ask me</div>
+            </div>
+          {/block:AskEnabled}    
+          {block:Twitter}
+            {block:ifShowTwitterLink}
+                <div class="item">
+                    <a href="http://www.twitter.com/{TwitterUsername}">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <div class="comment bottom">
+                        Twitter
+                    </div>
+                </div>
+            {/block:ifShowTwitterLink}
+          {/block:Twitter}
+          {block:ifShowArchiveLink}
+            <div class="item">
+                <a href="/archive"><i class="fa fa-archive"></i></a>
+                <div class="comment bottom">Archive</div>
+            </div>
+          {/block:ifShowArchiveLink}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="profile-small">
+        <div class="header" style="background:url({text: Header Image URL}) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      </div>
+      <div class="profile-image">
+        <a href="{BlogURL}"><img src="{PortraitURL-128}"/></a>
+      </div>
+      <div class="text">
+        <h3>{Title}</h3>
+        {block:Description}
+            <p>{Description}</p>
+        {/block:Description}
+        <p><a href="http://eepurl.com/Vt09z" target="_blank" style="background-color: #59c1de; padding: 5px 10px 5px 10px; text-decoration: none; color: #3a3a3a; border-radius: 3px"> <i class="fa fa-envelope" style="color: #3a3a3a"></i> get project updates</a></p>
+      </div>
+      <div class="table">
+        <div class="row">
+        <!--social links-->
+        <div class="item">
+            <a href="http://lifeandeverything.net">
+                <i class="fa fa-home"></i>
+            </a>
+            <div class="comment bottom">Main site</div>
+        </div>
+        <div class="item">
+            <a href="http://blog.lifeandeverything.net">
+                <i class="fa fa-level-up"></i>
+            </a>
+            <div class="comment bottom">Blog Top</div>
+        </div>
+        <div class="item">
+            <a href="https://twitter.com/LtUaE_game">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <div class="comment bottom">
+                Twitter
+            </div>
+        </div>
+        <div class="item">
+            <a href="https://www.facebook.com/lifetheuniverseandeverythinggame">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <div class="comment bottom">
+                Facebook
+            </div>
+        </div>        
+            <div class="item">
+                <a href="/archive"><i class="fa fa-archive"></i></a>
+                <div class="comment bottom">Archive</div>
+            </div>        
+          {block:AskEnabled}
+            <div class="item">
+                <a href="/ask"><i class="fa fa-comment"></i></a>
+                <div class="comment bottom">Ask me</div>
+            </div>
+          {/block:AskEnabled}    
+          {block:Twitter}
+            {block:ifShowTwitterLink}
+                <div class="item">
+                    <a href="http://www.twitter.com/{TwitterUsername}">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <div class="comment bottom">
+                        Twitter
+                    </div>
+                </div>
+            {/block:ifShowTwitterLink}
+          {/block:Twitter}
+          {block:ifShowArchiveLink}
+            <div class="item">
+                <a href="/archive"><i class="fa fa-archive"></i></a>
+                <div class="comment bottom">Archive</div>
+            </div>
+          {/block:ifShowArchiveLink}
+        </div>
+      </div>
+    </div>
+    {block:Posts}
+        {block:Text}
+            <div class="post text-post {block:RebloggedFrom}reblog-margin{/block:RebloggedFrom}">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <div class="text">
+                    {block:Title}
+                        <h1><a href="{Permalink}">{Title}</a></h1>
+                    {/block:Title}
+                    <p>{Body}</p>
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Text}
+        {block:Answer}
+            <div class="post question">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <div class="text">
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                <img src="{AskerPortraitURL-24}" class="avatar"/>
+                            </div>
+                            <div class="button">
+                                <p><span class="bold">{Asker} asked: {Question}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <p>{Replies}</p>
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Answer}
+        {block:Photo}
+            <div class="post image">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <a href="{PhotoURL-HighRes}" data-source='{PhotoURL-HighRes}' class='image-popup-no-margins' title=''>
+                    <img src="{PhotoURL-HighRes}" class="with-caption" alt="{PhotoAlt}"/>
+                </a>
+                <div class="text">
+                    <p>
+                        {block:Caption}
+                            {Caption}
+                        {/block:Caption}
+                    </p>
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Photo}
+        {block:Panorama}
+            <div class="post panorama">
+            {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+                <div class="text">
+                    {block:Caption}
+                    <p>
+                        {Caption}
+                    </p>
+                    {/block:Caption}
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Panorama}
+        {block:Quote}
+            <div class="post quote">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <div class="text">
+                    <h1 class="quote">"{Quote}"</h1>
+                    {block:Source}
+                        <p><span class="source">-{Source}</span></p>
+                    {/block:Source}
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Quote}
+        {block:Link}
+            <div class="post link">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <a href="{URL}" target="{Target}">
+                    <div class="link-name">
+                        {Name}
+                        <p>{Host}</p>
+                    </div>
+                </a>
+                <div class="text">
+                    {block:Description}
+                        {Description}
+                    {/block:Description}
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Link}
+        {block:Audio}
+            <div class="post audio">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                {block:AudioEmbed}
+                    <div class="audio-player audio-500">{AudioEmbed-500}</div>
+                    <div class="audio-player audio-400">{AudioEmbed-400}</div>
+                    <div class="audio-player audio-250">{AudioEmbed-250}</div>
+                {/block:AudioEmbed}
+                <div class="text">
+                    
+                    
+                    {block:Caption}
+                        <div class="caption">{Caption}</div>
+                    {/block:Caption}
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Audio}
+        {block:Video}
+            <div class="post audio">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <div class="large-video">{Video-500}</div>
+                <div class="medium-video">{Video-400}</div>
+                <div class="small-video">{Video-250}</div>
+                <div class="text">
+                    
+                    {block:Caption}
+                        <div class="caption">{Caption}</div>
+                    {/block:Caption}
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Video}
+        {block:Chat}
+            <div class="post chat">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <div class="text">
+                    {block:Title}
+                        <h1><a href="{Permalink}">{Title}</a></h1>
+                    {/block:Title}
+                    {block:Lines}
+                        <div class="{Alt}">
+                            <p>
+                                {block:Label}
+                                    <span class="bold">{Label}</span>
+                                {/block:Label}
+                                {Line}
+                            </p>
+                        </div>
+                    {/block:Lines}
+                    <br/>
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Chat}
+        {block:Photoset}
+            <div class="post photoset">
+                {block:RebloggedFrom}
+                    <div class="reblog">
+                        <div class="social-buttons">
+                            <div class="row">
+                                <div class="button">
+                                    <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"/></a>
+                                </div>
+                                <div class="button accent">
+                                    Reblogged from: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {/block:RebloggedFrom}
+                <div class="large-video">{Photoset-500}</div>
+                <div class="medium-video">{Photoset-400}</div>
+                <div class="small-video">{Photoset-250}</div>
+                <div class="text">
+                    {block:Caption}
+                        <p class="caption">{Caption}</p>
+                    {/block:Caption}
+                    {block:HasTags}
+                        <div class="tags">
+                            {block:Tags}
+                                <div class="tag"><a href="{TagURL}">#{Tag}</a></div>
+                            {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+                    <div class="social-buttons">
+                        <div class="row">
+                            <div class="button">
+                                {LikeButton}
+                            </div>
+                            <div class="button">
+                                {ReblogButton}
+                            </div>
+                            {block:NoteCount}
+                                <div class="button">
+                                    <p>{NoteCountWithLabel}</p>
+                                </div>
+                            {/block:NoteCount}
+                            <div class="button">
+                                <p>{TimeAgo}</p>
+                            </div>
+                            <div class="button">
+                                <p><a href="{Permalink}">Permalink</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block:Photoset}
+    {PostNotes}{/block:Posts}
+    <p id="footer text">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">&#171; Previous</a>
+            {/block:PreviousPage}
+            {block:NextPage}
+                <a href="{NextPage}">Next &#187;</a>
+            {/block:NextPage}
+
+            <a href="/archive">Archive</a>
+            <a href="http://mclean-tom.tumblr.com/"><span class="subtle">Tumblr Theme By Tom Mclean</span></a>
+    </p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://static.tumblr.com/cwragcd/ONyn4wv5b/jquery.magnific-popup.min.js"></script>
+<script>
+    $('.without-caption').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+$('.with-caption').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		zoom: {
+			enabled: true
+		}
+	});
+
+$('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+</script>
+
+    </body>
+</html>
