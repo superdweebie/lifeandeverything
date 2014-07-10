@@ -400,6 +400,12 @@ img.small-icon {
     width: 32px;
 }
 
+.icon-blog {
+    background: url("sprit.png") no-repeat scroll -259px -156px rgba(0, 0, 0, 0);
+    background-size: 400px;
+
+}
+
 .icon-tumblr {
     background: url("sprit.png") no-repeat scroll -309px -109px rgba(0, 0, 0, 0);
     background-size: 400px;
