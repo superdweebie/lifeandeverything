@@ -6,7 +6,7 @@
         backdrop;
 
     function doClose(evt){
-        evt.preventDefault();
+        if (typeof evt !== undefined) evt.preventDefault();
         modal.setAttribute('class', 'modal fade');
         backdrop.setAttribute('class', 'modal-backdrop fade');
         modal.setAttribute('style', 'display: none');
@@ -16,7 +16,7 @@
     }
 
     function doOpen(evt){
-        evt.preventDefault();
+        if (evt) evt.preventDefault()
         document.body.setAttribute('class', '.modal-open');
         backdrop = document.createElement('div');
         backdrop.setAttribute('class', 'modal-backdrop fade');
@@ -35,4 +35,6 @@
     for(i=0; i<close.length;i++){
         close[i].addEventListener('click', doClose)
     }
+    
+    window.modal = {doOpen: doOpen};
 })();

@@ -284,7 +284,9 @@
 
 		// When a toggle is clicked, run the click handler
 		forEach(toggles, function (toggle) {
-                        toggle.addEventListener('click', function(){ga('send', 'event', 'click', 'anchor', toggle.getAttribute('href'))});
+                    if(typeof ga !== 'undefined') {
+                        toggle.addEventListener('click', function(){ga('send', 'event', 'click', 'anchor', toggle.getAttribute('href'))})
+                    }
 			toggle.addEventListener('click', exports.animateScroll.bind( null, toggle, toggle.getAttribute('href'), settings ), false);
 		});
 
