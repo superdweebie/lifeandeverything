@@ -1,4 +1,3 @@
-console.log('here');
 (function() {
     var affixItems = document.querySelectorAll('[data-affix]');
 
