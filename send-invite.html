@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Life and Everything: invite a friend</title>
+        <meta name="description" content="Invite a friend to be part of Life and Everything.">
+        <meta name="author" content="Tim Roediger">
+        <meta name="keywords" content="life and everything, game, boardgame, converstation, party game, conversation starter">        
+        <link rel="icon shortcut" type="image/png" href="favicon.png" />
+        <link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <style>
+            .header {
+                background-image: url('header-background.png');
+                background-position: center bottom;
+                font-family: Coustard;
+            }
+            .logo{
+                width: 120px;
+                padding: 10px;                    
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="jumbotron header">
+            <div class="container">
+                <img class="logo pull-left" src="logo.png"/>
+
+                <h1 class="pull-left">Invite a friend</h1>
+
+            </div>
+        </div>        
+        <div class="container">
+
+            <p>
+                Fill in the form below, check the preview, and hit send to invite a friend to check out Life and Everything.
+            </p>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="friend">Your friend's name:</label>    
+                    <input type="text" class="form-control" id="friend">
+
+                    <label for="friend-email">Your friend's email:</label>    
+                    <input type="text" class="form-control" id="friend-email">
+
+                    <label for="name">Your name:</label>    
+                    <input type="text" class="form-control" id="name">    
+
+                    <label for="name-email">Your email:</label>    
+                    <input type="text" class="form-control" id="name-email">    
+
+                    <div class="form-group">
+                        <label for="message">Your personal message:</label>    
+                        <textarea id="message" class="form-control" rows="4"></textarea>
+                    </div>      
+                </div> 
+
+                <button data-submit type="submit" class="btn btn-default">Send</button>                        
+            </form>
+
+            <h2>Preview</h2>
+            <p>Hi [YOUR FRIEND'S NAME],</p>
+
+            <p>You're friend [YOUR NAME] thought you might be interested in Life and Everything.</p>
+
+            <p>Life and Everything is a new conversation starter board game currently in development.</p>
+
+            <p>You'll find an overview of the game on the main webside here: <a href='http://lifeandeverything.net'>lifeandeverything.net</a></p>
+
+            <p>You'll find the story of the game so far on the blog: <a href='http://blog.lifeandeverything.net'>blog.lifeandeverything.net</a></p>            
+
+            <p>And, it would be great if you wanted either follow or participate in development by getting regular <a href="http://eepurl.com/Vt09z">email updates</a> (once every week or two, no spam)</p>
+
+            <p>[YOUR NAME] also wanted to say:</p>
+
+            <p>[YOUR MESSAGE]</p>
+
+            <p>Have a great day,</p>
+
+            <p>Tim</p>
+            <p>tim@lifeandeverything.net</p>
+
+            <p>Note: this is a semi-automated email. It was initiated by your friend but was sent automatically be the Life and Everything server.</p>
+            <p>To send a message to Tim from Life and Everything, hit reply.</p>
+            <p>To reply to [NAME], forward to: </p>
+        </div>      
+
+        <script src="mandrill.js"></script>
+    </body>
+</html>

@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="image source.svg">
   <defs
      id="defs4" />
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0990471"
-     inkscape:cx="-726.8889"
-     inkscape:cy="1318.8662"
+     inkscape:cx="-868.83004"
+     inkscape:cy="1319.3211"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,7 +34,7 @@
      inkscape:window-width="1332"
      inkscape:window-height="845"
      inkscape:window-x="82"
-     inkscape:window-y="247"
+     inkscape:window-y="197"
      inkscape:window-maximized="0"
      inkscape:snap-global="false" />
   <metadata
@@ -100,7 +100,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="C:\TEMP\lifeandeverything\mailchimp-header.png"
+       inkscape:export-filename="C:\xds\lifeandeverything\mailchimp-header.png"
        y="-399.56628"
        x="-1136.6162"
        height="277"
@@ -464,20 +464,16 @@
        xml:space="preserve"
        style="font-size:54.17313385px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Plantagenet Cherokee;-inkscape-font-specification:Plantagenet Cherokee Bold"
        x="-842.15454"
-       y="-327.42825"
+       y="-285.42825"
        id="text3052"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan3054"
          x="-842.15454"
-         y="-327.42825">Life</tspan><tspan
+         y="-285.42825">Life</tspan><tspan
          sodipodi:role="line"
          x="-842.15454"
-         y="-273.25513"
-         id="tspan3056">the Universe</tspan><tspan
-         sodipodi:role="line"
-         x="-842.15454"
-         y="-219.08199"
+         y="-231.25513"
          id="tspan3058">and Everything</tspan></text>
     <text
        sodipodi:linespacing="100%"

@@ -1,4 +1,4 @@
 lifeandeverything
 =================
 
-Site for [Life the Universe and Everything](http://lifeandeverything.net)
+Site for [Life and Everything](http://lifeandeverything.net)
