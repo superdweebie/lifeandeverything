@@ -75,10 +75,10 @@
                 <div class="form-group">
                     <label for="age">My age:</label><br />
                     <label class="radio-inline">
-                        <input type="radio" name="age" id="age-0" value="< 20"> < 20
+                        <input type="radio" name="age" id="age-0" value="12-17"> 12-17
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="age" id="age-1" value="21-35"> 21-35
+                        <input type="radio" name="age" id="age-1" value="18-35"> 18-35
                     </label>
                     <label class="radio-inline">
                         <input type="radio" name="age" id="age-2" value="35-50"> 35-50
@@ -242,6 +242,48 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="recommend">How likely is it that you would recommend the game to a friend or colleague?</label><br />
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-0" value="yes, so I could play">0<span class='text-muted'>(never)</span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-1" value="yes, to give to someone else">1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-2" value="no">2
+                    </label>   
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-3" value="yes, so I could play">3 
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-4" value="yes, to give to someone else">4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-5" value="no">5
+                    </label>  
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-6" value="yes, so I could play">6
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-7" value="yes, to give to someone else">7
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-8" value="no">8
+                    </label>  
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-9" value="yes, so I could play">9
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="recommend" id="recommend-10" value="yes, to give to someone else">10<span class='text-muted'>(certainly)</span>
+                    </label>                     
+                </div>
+                
+                <div class="form-group">
+                    <label for="recommendComment">Why would you recommend or not recommend Life and Everything?</label>    
+                    <textarea id="recommendComment" class="form-control" rows="2"></textarea>
+                </div> 
+                
+                <div class="form-group">
                     <label for="cost">If you saw Life and Everything on a store shelf, how much would you expect it to cost?</label><br />
                     <label class="radio-inline">
                         <input type="radio" name="cost" id="cost-0" value="$20"> $20
@@ -275,17 +317,17 @@
 
                 <h2>It would be better if ...</h2>                 
                 <div class="form-group">
-                    <label for="gender">The game rules or play experience could be improved by:</label><br />
-                    <textarea id="play-expierience" class="form-control" rows="2"></textarea>   
+                    <label for="playExpierience">The game rules or play experience could be improved by:</label><br />
+                    <textarea id="playExpierience" class="form-control" rows="2"></textarea>   
                 </div>
 
                 <div class="form-group">
                     <label for="weakTopics">These discussion topics are weak and should be replaced or discarded:</label>    
-                    <textarea id="weak-topics" class="form-control" rows="2"></textarea>
+                    <textarea id="weakTopics" class="form-control" rows="2"></textarea>
                 </div>                        
                 <div class="form-group">
                     <label for="newTopics">These topic suggestions which would be great to include:</label>    
-                    <textarea id="new-topics" class="form-control" rows="2"></textarea>
+                    <textarea id="newTopics" class="form-control" rows="2"></textarea>
                 </div>                         
                 <div class="form-group">
                     <label for="comments">I have other comments:</label>    
@@ -305,7 +347,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="update">I would like receive updates about the development of Life and Everything</label><br />
+                    <label for="update">I would like to receive updates about the development of Life and Everything</label><br />
                     <label class="radio-inline">
                         <input type="radio" name="update" id="update-0" value="yes"> yes
                     </label>
@@ -329,7 +371,7 @@
                         </div>
                     </div>
                 </div>                        
-                <button data-submit type="submit" class="btn btn-default">Submit feedback (DOESN'T WORK YET)</button>                         
+                <button data-submit type="submit" class="btn btn-default">Submit feedback</button>                         
             </form>
         </div>      
 

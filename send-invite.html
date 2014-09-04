@@ -24,6 +24,15 @@
                 width: 120px;
                 padding: 10px;                    
             }
+            h2 {
+                font-size: 18px;
+                background-color: #228ba9;
+                padding: 10px;
+                font-family: Coustard;
+            }  
+            form{
+                padding-bottom: 40px;
+            }            
         </style>
     </head>
 
@@ -38,61 +47,84 @@
         </div>        
         <div class="container">
 
-            <p>
-                Fill in the form below, check the preview, and hit send to invite a friend to check out Life and Everything.
-            </p>
-
+            <h3>
+            <ol>
+                <li>Fill in the form</li>
+                <li>Check the preview</li>
+                <li>Send</li>
+            </ol> 
+            </h3>
+                <p class='text-muted'>Note: we will treat the details you share with respect. You friend will only receive further emails if they opt in to updates from Life and Everything.<br />
+                 Thanks for sharing Life and Everything with others!
+                </p>
             <form>
-
+                
                 <div class="form-group">
-                    <label for="friend">Your friend's name:</label>    
-                    <input type="text" class="form-control" id="friend">
-
-                    <label for="friend-email">Your friend's email:</label>    
-                    <input type="text" class="form-control" id="friend-email">
-
-                    <label for="name">Your name:</label>    
-                    <input type="text" class="form-control" id="name">    
-
-                    <label for="name-email">Your email:</label>    
-                    <input type="text" class="form-control" id="name-email">    
-
-                    <div class="form-group">
-                        <label for="message">Your personal message:</label>    
-                        <textarea id="message" class="form-control" rows="4"></textarea>
-                    </div>      
+                    <label>My details:</label>    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="senderFirstname" placeholder="my firstname">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="senderLastname" placeholder="my lastname">
+                        </div>
+                        <div class="col-sm-4">        
+                            <input type="email" class="form-control" id="senderEmail" placeholder="my email">
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="form-group">
+                    <label>My friend's details:</label>    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="friendFirstname" placeholder="friend's firstname">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="friendLastname" placeholder="friend's lastname">
+                        </div>
+                        <div class="col-sm-4">        
+                            <input type="email" class="form-control" id="friendEmail" placeholder="friend's email">
+                        </div>                        
+                    </div>
                 </div> 
+                
+                <div class="form-group">
+                    <label for="message">My personal message:</label>    
+                    <textarea id="message" class="form-control" rows="4"></textarea>
+                </div>      
 
-                <button data-submit type="submit" class="btn btn-default">Send</button>                        
-            </form>
+            <h2>Email Preview</h2>
+            <p>Hi <span id='previewFriendName'>YOUR FRIEND'S NAME</span>,</p>
 
-            <h2>Preview</h2>
-            <p>Hi [YOUR FRIEND'S NAME],</p>
+            <p>You're friend <span id='previewSenderName1'>YOUR NAME</span> thought you might be interested in Life and Everything.</p>
 
-            <p>You're friend [YOUR NAME] thought you might be interested in Life and Everything.</p>
+            <p><b>Life and Everything</b> is a new conversation starter board game currently in development.</p>
 
-            <p>Life and Everything is a new conversation starter board game currently in development.</p>
-
-            <p>You'll find an overview of the game on the main webside here: <a href='http://lifeandeverything.net'>lifeandeverything.net</a></p>
+            <p>You'll find an overview of the game on the main website here: <a href='http://lifeandeverything.net'>lifeandeverything.net</a></p>
 
             <p>You'll find the story of the game so far on the blog: <a href='http://blog.lifeandeverything.net'>blog.lifeandeverything.net</a></p>            
 
             <p>And, it would be great if you wanted either follow or participate in development by getting regular <a href="http://eepurl.com/Vt09z">email updates</a> (once every week or two, no spam)</p>
 
-            <p>[YOUR NAME] also wanted to say:</p>
+            <p><span id='previewSenderName2'>YOUR NAME</span> also wanted to say:</p>
 
-            <p>[YOUR MESSAGE]</p>
+            <p> <span id='previewMessage'>YOUR MESSAGE</span></p>
 
             <p>Have a great day,</p>
 
             <p>Tim</p>
             <p>tim@lifeandeverything.net</p>
 
+            <div class='text-muted'>
             <p>Note: this is a semi-automated email. It was initiated by your friend but was sent automatically be the Life and Everything server.</p>
             <p>To send a message to Tim from Life and Everything, hit reply.</p>
-            <p>To reply to [NAME], forward to: </p>
+            <p>To reply to  <span id='previewSenderName3'>YOUR NAME</span>, forward to:  <span id='previewSenderEmail'>YOUR EMAIL</span></p>
+            </div>
+                <button data-submit type="submit" class="btn btn-default">Send</button>                        
+            </form>
         </div>      
 
-        <script src="mandrill.js"></script>
+        <script src="send-invite.js"></script>
     </body>
 </html>

@@ -6,9 +6,26 @@
 
         btn.innerHTML = 'Sending...';
         
-        var mergeVars = [];
+        var result = {};
         
-        ['gender'].forEach(function(name){
+        [
+          'gender',
+          'age',
+          'play',
+          'players',
+          'rounds',
+          'time',
+          'fun',
+          'again',
+          'length',
+          'conversation',
+          'depth',
+          'recommend',
+          'cost',
+          'buy',
+          'credit',
+          'update'          
+        ].forEach(function(name){
             var counter = 0;
             var element;
             var id;
@@ -17,22 +34,27 @@
                 element = document.getElementById(id);
                 if (!element) break;
                 if (element.checked){
-                    mergeVars.push({
-                        name: name,
-                        content: element.value
-                    })
+                    result[name] = element.value;
                 }
                 ++counter;
             } 
-        })
+        });
         
-        ['play-expierience'].forEach(function(name){
-            mergeVars.push({
-                name: name,
-                content: document.getElementById(name).value
-            })
+        [
+            'playExpierience',
+            'recommendComment',
+            'weakTopics',
+            'newTopics',
+            'comments',
+            'firstname',
+            'lastname',
+            'email'            
+        ].forEach(function(name){
+            result[name] = document.getElementById(name).value
         })
 
+        result.timestamp = (new Date()).toString();
+       
         var jsonhttp = new XMLHttpRequest;
         jsonhttp.onreadystatechange = function() {
             if (jsonhttp.readyState === 4 && jsonhttp.status === 200) {
@@ -58,7 +80,10 @@
                             'Reply - To': "tim@lifeandeverything.net"
                         },
                         inline_css: true,
-                        global_merge_vars: mergeVars,
+                        global_merge_vars: [{
+                            name: 'result',
+                            content: JSON.stringify(result, null, 4)
+                        }],
                         tags: [
                             "playtesting"
                         ]
