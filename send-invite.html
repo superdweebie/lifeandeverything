@@ -48,17 +48,17 @@
         <div class="container">
 
             <h3>
-            <ol>
-                <li>Fill in the form</li>
-                <li>Check the preview</li>
-                <li>Send</li>
-            </ol> 
+                <ol>
+                    <li>Fill in the form</li>
+                    <li>Check the preview</li>
+                    <li>Send</li>
+                </ol> 
             </h3>
-                <p class='text-muted'>Note: we will treat the details you share with respect. You friend will only receive further emails if they opt in to updates from Life and Everything.<br />
-                 Thanks for sharing Life and Everything with others!
-                </p>
+            <p class='text-muted'>Note: we will treat the details you share with respect. You friend will only receive further emails if they opt in to updates from Life and Everything.<br />
+                Thanks for sharing Life and Everything with others!
+            </p>
             <form>
-                
+
                 <div class="form-group">
                     <label>My details:</label>    
                     <div class="row">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>   
-                
+
                 <div class="form-group">
                     <label>My friend's details:</label>    
                     <div class="row">
@@ -88,39 +88,42 @@
                         </div>                        
                     </div>
                 </div> 
-                
+
                 <div class="form-group">
                     <label for="message">My personal message:</label>    
                     <textarea id="message" class="form-control" rows="4"></textarea>
                 </div>      
 
-            <h2>Email Preview</h2>
-            <p>Hi <span id='previewFriendName'>YOUR FRIEND'S NAME</span>,</p>
+                <h2>Email Preview</h2>
 
-            <p>You're friend <span id='previewSenderName1'>YOUR NAME</span> thought you might be interested in Life and Everything.</p>
+                <pre>
+from: tim@lifeandeverthing.net
+to: <span id="previewFriendEmail"></span>
+subject: <span id='previewSenderName4'>YOUR NAME</span> invites you to check out Life and Everything</pre>
 
-            <p><b>Life and Everything</b> is a new conversation starter board game currently in development.</p>
+                <p>Hi <span id='previewFriendName'>YOUR FRIEND'S NAME</span>,</p>
+                <p>Your friend <span id='previewSenderName1'>YOUR NAME</span> thought you might be interested in Life and Everything: a new conversation starter board game currently in development.</p>
 
-            <p>You'll find an overview of the game on the main website here: <a href='http://lifeandeverything.net'>lifeandeverything.net</a></p>
+                <p>Check it out on our <a href="http://lifeandeverything.net">website</a>, and follow the story so far on our <a href="http://blog.lifeandeverything.net">blog</a>.</p>
 
-            <p>You'll find the story of the game so far on the blog: <a href='http://blog.lifeandeverything.net'>blog.lifeandeverything.net</a></p>            
+                <p>Want updates? Subscribe to our <a href="http://eepurl.com/Vt09z">email updates</a> (once every week or two, no spam).</p>
 
-            <p>And, it would be great if you wanted either follow or participate in development by getting regular <a href="http://eepurl.com/Vt09z">email updates</a> (once every week or two, no spam)</p>
+                <p><span id='previewSenderName2'>YOUR NAME</span> also wanted to say:</p>
 
-            <p><span id='previewSenderName2'>YOUR NAME</span> also wanted to say:</p>
+                <p><span id='previewMessage'>YOUR MESSAGE</span></p>                                                                                
 
-            <p> <span id='previewMessage'>YOUR MESSAGE</span></p>
+                <p>Have a great day,</p>
 
-            <p>Have a great day,</p>
+                <p>Tim<br/>
+                    <small>Lead Game Designer<br/>
+                        <a href="http://lifeandeverything.net">lifeandeverything.net</small></a>
+                </p>
 
-            <p>Tim</p>
-            <p>tim@lifeandeverything.net</p>
-
-            <div class='text-muted'>
-            <p>Note: this is a semi-automated email. It was initiated by your friend but was sent automatically be the Life and Everything server.</p>
-            <p>To send a message to Tim from Life and Everything, hit reply.</p>
-            <p>To reply to  <span id='previewSenderName3'>YOUR NAME</span>, forward to:  <span id='previewSenderEmail'>YOUR EMAIL</span></p>
-            </div>
+                <div class='text-muted'>
+                    <p>Note: this is a semi-automated email. It was initiated by your friend but was sent automatically be the Life and Everything server.</p>
+                    <p>To send a message to Tim from Life and Everything, hit reply.</p>
+                    <p>To reply to  <span id='previewSenderName3'>YOUR NAME</span>, forward to:  <span id='previewSenderEmail'>YOUR EMAIL</span></p>
+                </div>
                 <button data-submit type="submit" class="btn btn-default">Send</button>                        
             </form>
         </div>      

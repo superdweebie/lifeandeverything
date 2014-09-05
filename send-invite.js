@@ -3,11 +3,13 @@
     //preview updater
     setInterval(function(){
         document.getElementById('previewFriendName').innerHTML = document.getElementById('friendFirstname').value + ' ' + document.getElementById('friendLastname').value;
+        document.getElementById('previewFriendEmail').innerHTML = document.getElementById('friendEmail').value
         
         var senderName = document.getElementById('senderFirstname').value + ' ' + document.getElementById('senderLastname').value;
         document.getElementById('previewSenderName1').innerHTML = senderName;
         document.getElementById('previewSenderName2').innerHTML = senderName;
         document.getElementById('previewSenderName3').innerHTML = senderName;        
+        document.getElementById('previewSenderName4').innerHTML = senderName;
         
         document.getElementById('previewMessage').innerHTML = document.getElementById('message').value;
         document.getElementById('previewSenderEmail').innerHTML = document.getElementById('senderEmail').value;        
@@ -50,7 +52,7 @@
             if (jsonhttp.readyState === 4 && jsonhttp.status === 200) {
                 btn.innerHTML = 'Invite sent!';
             } else if (jsonhttp.readyState === 4 && jsonhttp.status === 500) {
-                btn.innerHTML = 'Send error :(';                
+                btn.innerHTML = 'Send error :( <small>Maybe one of the emails is incomplete? Click to try again</small>';                
             }
         }
         jsonhttp.open("POST", "https://mandrillapp.com/api/1.0/messages/send-template.json", true);
